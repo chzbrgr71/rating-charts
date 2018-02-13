@@ -10,6 +10,8 @@ spec:
         app: "{{.Values.api.name}}"
         version: "{{.Values.api.versionLabel}}"
     spec:
+      imagePullSecrets:
+        - name: acr-secret
       containers:
       - name: "{{.Values.api.name}}"
         image: "{{.Values.api.image}}:{{.Values.api.imageTag}}"
