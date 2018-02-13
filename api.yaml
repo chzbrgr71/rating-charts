@@ -32,7 +32,7 @@ spec:
         name:  heroes-api
     spec:
       containers:
-      - image: chzbrgr71/rating-api:local
+      - image: chzbrgr71/rating-api:base
         name:  heroes-api-cntnr
         resources:
           requests:

@@ -31,7 +31,7 @@ spec:
         name:  heroes-db
     spec:
       containers:
-      - image:  chzbrgr71/rating-db:local
+      - image:  chzbrgr71/rating-db:base
         name:  heroes-db-cntnr
         resources:
           requests:
