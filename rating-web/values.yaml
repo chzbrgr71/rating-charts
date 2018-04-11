@@ -5,5 +5,5 @@ web:
   versionLabel: prod
   replicas: 1
   image: "chzbrgr71/rating-web"
-  imageTag: "v2"
+  imageTag: "v1"
   serviceType: "LoadBalancer"

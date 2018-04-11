@@ -4,5 +4,5 @@ mongo:
   deployment: rating-db-prod
   versionLabel: prod
   image: "chzbrgr71/rating-db"
-  imageTag: "v3"
+  imageTag: "v1"
   serviceType: "ClusterIP"
