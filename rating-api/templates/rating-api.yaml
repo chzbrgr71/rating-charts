@@ -15,7 +15,7 @@ spec:
         image: "{{.Values.api.image}}:{{.Values.api.imageTag}}"
         env:
         - name: MONGODB_URI
-          value: mongodb://rating-db.default.svc.cluster.local:27017/webratings
+          value: "{{.Values.api.mongoURI}}"
         resources:
           requests:
             cpu: "100m"

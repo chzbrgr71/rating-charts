@@ -7,3 +7,4 @@ api:
   image: "chzbrgr71/rating-api"
   imageTag: "v1"
   serviceType: "LoadBalancer"
+  mongoURI: "mongodb://rating-db.default.svc.cluster.local:27017/webratings"
