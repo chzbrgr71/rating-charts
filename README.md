@@ -11,6 +11,8 @@ helm upgrade --install rating-db ./rating-db --set mongo.image=chzbrgr71/rating-
 helm upgrade --install --reuse-values rating-api ./rating-api --set api.image=chzbrgr71/rating-api --set api.imageTag=base --set api.serviceType=LoadBalancer --set api.mongoURI=
 
 helm upgrade --install rating-web ./rating-web --set web.image=chzbrgr71/rating-web --set web.imageTag=base --set web.serviceType=LoadBalancer
+
+helm upgrade rating-web ./rating-web --set web.imageTag=cph
 ```
 
 ## ACR Creds
